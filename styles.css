@@ -6,162 +6,108 @@
 }
 
 body {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  min-height: 100vh;
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
   padding: 20px;
 }
 
 /* Navigation Bar Styles */
 nav {
   background-color: #333;
-  border-radius: 10px;
-  margin-bottom: 30px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-nav ul {
-  list-style: none;
-  display: flex;
-  justify-content: center;
-  padding: 15px 0;
-}
-
-nav ul li {
-  margin: 0 20px;
-}
-
-nav ul li a {
-  color: white;
-  text-decoration: none;
-  font-size: 18px;
-  font-weight: bold;
-  padding: 10px 20px;
-  transition: all 0.3s ease;
+  padding: 15px;
+  margin-bottom: 20px;
   border-radius: 5px;
 }
 
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-right: 20px;
+  padding: 10px 15px;
+  font-size: 16px;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
 /* Navigation Hover Effect */
-nav ul li a:hover {
+nav a:hover {
   background-color: #555;
-  color: #ffd700;
-  transform: scale(1.05);
 }
 
 /* Container Styles */
 .container {
-  max-width: 1200px;
+  max-width: 800px;
   margin: 0 auto;
   background-color: white;
   padding: 30px;
-  border-radius: 15px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
 /* Heading Styles */
 h1 {
   color: #333;
   margin-bottom: 20px;
-  text-align: center;
-  font-size: 2.5em;
 }
 
 h2 {
   color: #555;
-  margin: 20px 0 15px 0;
-  padding-bottom: 10px;
-  border-bottom: 3px solid #667eea;
+  margin: 20px 0 10px 0;
 }
 
-/* About Section */
-.about-section {
-  background-color: #f8f9fa;
-  padding: 20px;
-  border-radius: 10px;
-  margin-bottom: 25px;
-  line-height: 1.6;
-  color: #444;
-}
-
-/* Skills Section */
-.skills-section ul {
-  list-style: none;
-  padding: 0;
-}
-
-.skills-section ul li {
-  background-color: #e9ecef;
-  margin: 10px 0;
-  padding: 12px 20px;
-  border-radius: 8px;
-  font-size: 16px;
-  transition: all 0.3s ease;
-}
-
-/* Skills Hover Effect */
-.skills-section ul li:hover {
-  background-color: #667eea;
-  color: white;
-  transform: translateX(10px);
-  cursor: pointer;
-}
-
-/* Layout Exercise Styles */
+/* Centered Heading for Layout Exercise */
 .centered-heading {
   text-align: center;
-  color: #667eea;
-  margin: 40px 0 25px 0;
-  font-size: 1.8em;
+  margin-top: 30px;
+}
+
+/* Skills List Styles */
+ul {
+  margin-left: 30px;
+  margin-bottom: 20px;
+}
+
+ul li {
+  margin: 10px 0;
+  color: #666;
 }
 
 /* Box Container - Flexbox Layout */
 .box-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  gap: 20px;
-  padding: 20px;
-  background-color: #f8f9fa;
-  border-radius: 15px;
+  gap: 15px;
   margin-top: 20px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
 }
 
 /* Individual Box Styles */
 .box {
   flex: 1;
-  min-width: 120px;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  min-width: 100px;
+  background-color: #4caf50;
   color: white;
   text-align: center;
-  padding: 40px 20px;
-  font-size: 2em;
+  padding: 30px 20px;
+  font-size: 24px;
   font-weight: bold;
-  border-radius: 12px;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
   transition: all 0.3s ease;
-  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 /* Box Hover Effect */
 .box:hover {
-  transform: translateY(-10px) scale(1.05);
-  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
-  background: linear-gradient(135deg, #764ba2 0%, #667eea 100%);
+  background-color: #45a049;
+  transform: scale(1.05);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
-/* Responsive Design - No Scrollbar Visible */
-@media (max-width: 768px) {
-  .box-container {
-    justify-content: center;
-  }
-
+/* Responsive - No Scrollbar Visible */
+@media (max-width: 600px) {
   .box {
-    min-width: calc(33.33% - 20px);
-  }
-}
-
-@media (max-width: 480px) {
-  .box {
-    min-width: calc(50% - 20px);
+    min-width: calc(50% - 15px);
   }
 }
