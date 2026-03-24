@@ -1,0 +1,167 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  min-height: 100vh;
+  padding: 20px;
+}
+
+/* Navigation Bar Styles */
+nav {
+  background-color: #333;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: 15px 0;
+}
+
+nav ul li {
+  margin: 0 20px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 10px 20px;
+  transition: all 0.3s ease;
+  border-radius: 5px;
+}
+
+/* Navigation Hover Effect */
+nav ul li a:hover {
+  background-color: #555;
+  color: #ffd700;
+  transform: scale(1.05);
+}
+
+/* Container Styles */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: white;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* Heading Styles */
+h1 {
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 2.5em;
+}
+
+h2 {
+  color: #555;
+  margin: 20px 0 15px 0;
+  padding-bottom: 10px;
+  border-bottom: 3px solid #667eea;
+}
+
+/* About Section */
+.about-section {
+  background-color: #f8f9fa;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 25px;
+  line-height: 1.6;
+  color: #444;
+}
+
+/* Skills Section */
+.skills-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.skills-section ul li {
+  background-color: #e9ecef;
+  margin: 10px 0;
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+/* Skills Hover Effect */
+.skills-section ul li:hover {
+  background-color: #667eea;
+  color: white;
+  transform: translateX(10px);
+  cursor: pointer;
+}
+
+/* Layout Exercise Styles */
+.centered-heading {
+  text-align: center;
+  color: #667eea;
+  margin: 40px 0 25px 0;
+  font-size: 1.8em;
+}
+
+/* Box Container - Flexbox Layout */
+.box-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 20px;
+  background-color: #f8f9fa;
+  border-radius: 15px;
+  margin-top: 20px;
+}
+
+/* Individual Box Styles */
+.box {
+  flex: 1;
+  min-width: 120px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  text-align: center;
+  padding: 40px 20px;
+  font-size: 2em;
+  font-weight: bold;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+/* Box Hover Effect */
+.box:hover {
+  transform: translateY(-10px) scale(1.05);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+  background: linear-gradient(135deg, #764ba2 0%, #667eea 100%);
+}
+
+/* Responsive Design - No Scrollbar Visible */
+@media (max-width: 768px) {
+  .box-container {
+    justify-content: center;
+  }
+
+  .box {
+    min-width: calc(33.33% - 20px);
+  }
+}
+
+@media (max-width: 480px) {
+  .box {
+    min-width: calc(50% - 20px);
+  }
+}
